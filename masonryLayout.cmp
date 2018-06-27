@@ -1,0 +1,20 @@
+<aura:component implements="forceCommunity:layout" description="Sample Custom Layout">
+    <aura:attribute name="content1" type="Aura.Component[]" required="false"></aura:attribute>
+    <aura:attribute name="content2" type="Aura.Component[]" required="false"></aura:attribute>
+    <aura:attribute name="content3" type="Aura.Component[]" required="false"></aura:attribute>
+    <aura:attribute name="content4" type="Aura.Component[]" required="false"></aura:attribute>
+    <aura:attribute name="content5" type="Aura.Component[]" required="false"></aura:attribute>
+    
+    <ltng:require scripts="/resource/masonry" afterScriptsLoaded="{!c.jsLoaded}"/>
+    
+    <h1>Masonry - columnWidth</h1>
+
+    <div class="js-grid">
+      <div class="grid-item">{!v.content1}</div>
+      <div class="grid-item grid-item--width2 grid-item--height2">{!v.content2}</div>
+      <div class="grid-item grid-item--height3">{!v.content3}</div>
+      <div class="grid-item grid-item--height2">{!v.content4}</div>
+      <div class="grid-item grid-item--width3">{!v.content5}</div>
+    </div>
+    
+</aura:component>

@@ -1,0 +1,28 @@
+.THIS .grid {
+  background: #EEE;
+  max-width: 1200px;
+}
+
+.THIS .grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.THIS .grid-item {
+  width: 160px;
+  height: 120px;
+  float: left;
+  background: #D26;
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+}
+
+.THIS .grid-item--width2 { width: 320px; }
+.THIS .grid-item--width3 { width: 480px; }
+.THIS .grid-item--width4 { width: 640px; }
+
+.THIS .grid-item--height2 { height: 200px; }
+.THIS .grid-item--height3 { height: 260px; }
+.THIS .grid-item--height4 { height: 360px; }
